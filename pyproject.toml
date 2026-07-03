@@ -1,0 +1,55 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "batteryhealthforecast"
+version = "0.1.0"
+description = "Battery degradation forecasting and Remaining Useful Life estimation framework."
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+
+authors = [
+    {name = "Ardinc Edis"}
+]
+
+keywords = [
+    "battery",
+    "forecasting",
+    "kalman",
+    "arima",
+    "gru",
+    "lstm",
+    "remaining useful life",
+    "machine learning"
+]
+
+dependencies = [
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scipy",
+    "statsmodels",
+    "scikit-learn",
+    "tensorflow"
+]
+
+[project.optional-dependencies]
+
+dev = [
+    "pytest",
+    "black",
+    "ruff",
+    "mypy",
+    "pre-commit"
+]
+
+[tool.black]
+line-length = 88
+
+[tool.ruff]
+line-length = 88
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
