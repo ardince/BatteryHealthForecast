@@ -1,8 +1,9 @@
 """
 BatteryHealthForecast
 
-A modular scientific framework for battery degradation forecasting
-and Remaining Useful Life (RUL) estimation.
+A modular scientific framework for battery degradation forecasting.
 """
 
-__version__ = "0.1.0"
+from .version import VERSION
+
+__version__ = VERSION
