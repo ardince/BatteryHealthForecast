@@ -8,7 +8,7 @@ version = "0.1.0"
 description = "Battery degradation forecasting and Remaining Useful Life estimation framework."
 readme = "README.md"
 requires-python = ">=3.11"
-license = {text = "MIT"}
+license = "MIT"
 
 authors = [
     {name = "Ardinc Edis"}
@@ -53,3 +53,11 @@ line-length = 88
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+# ==========================================================
+# Setuptools
+# ==========================================================
+
+[tool.setuptools.packages.find]
+include = ["batteryhealthforecast*"]
+exclude = ["legacy*", "tests*"]
